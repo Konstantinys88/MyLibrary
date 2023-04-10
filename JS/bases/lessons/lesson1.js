@@ -1,7 +1,7 @@
 `use strict`;
 
 const arr = ["a","b","c"];
-arr[10] = '123'
+arr[10] = '123';
 console.log(arr[10]);
 console.log(arr);
 
