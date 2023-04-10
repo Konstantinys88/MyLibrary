@@ -17,7 +17,7 @@ const arrObj = {
 const b = 'b';
 arrObj[`b`] = "v";
 
-console.log(arrObj.abc.gff);
+console.log(arrObj.b);
 
 // const obj = {a:1, b:2,};
 const obj = {

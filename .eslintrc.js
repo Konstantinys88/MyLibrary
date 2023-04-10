@@ -19,13 +19,13 @@ module.exports = {
 			"windows"
 		],
 		"quotes": [
-			"warn",
+			"off",
 			"double"
 		],
-		// "semi": [
-		// 	"0",
-		// 	"always"
-		// ],
+		"semi": [
+			"warn",
+			"always"
+		],
 		"no-unused-vars": [
 			"warn"
 		]
