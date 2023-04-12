@@ -50,3 +50,4 @@ blogs = ['wordpress','livejournsl', 'blogger'],
 internet = [...video, ...blogs, 'vk','facebook'];
 
 console.log(internet);
+
