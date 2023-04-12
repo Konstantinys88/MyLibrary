@@ -34,7 +34,7 @@ let lovesGenres;
 
 function rememberMyFilms() {
     for(let i = 0; i < 2; i++) {
-        viewidMovie = prompt('Один из последних просмотренных фильмов?', '');
+        viewidMovie = prompt('Один из последних просмотренных фильмов?', '').trim();
         valuation = prompt('На сколько оцените его?','');
         if(viewidMovie != null && valuation != null && viewidMovie != "" && valuation != '' && viewidMovie.length < 51) {
             personalMovieDB.movies[viewidMovie] = valuation;
