@@ -8,6 +8,8 @@ function init() {
     displayName();
 }
 
+// let name1 = "qasd";
+
 init();
 
 
