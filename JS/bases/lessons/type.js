@@ -44,4 +44,5 @@ console.log(c1,c2,c3);
 //     return a + b;
 // }
 
-console.log("145"[2]);
+console.log(+"Infinity");
+
