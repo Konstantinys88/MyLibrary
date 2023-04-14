@@ -57,20 +57,30 @@ console.log(isOpen(restorantData.openNow));
 // 1 решена
 
 function isAverageLunchPriceTrue(fDish, sDish, average) {
-    if (+fDish.price.slice(0, -1) + (sDish.price) < average) {
-        return 'Цена ниже средней';
-    } else {
-        return 'Цена выше средней';
+
+    let fD = +fDish.price.slice(0, -1);
+    let sD = +sDish.price.slice(0, -1);
+    let av = +average.slice(0, -1);
+
+    if (+(fD + sD) < +(av)) {
+        return 'Цена ниже средней'; 
+    } else { 
+        return 'Цена выше средней'; 
     }
 }
 
-console.log(isAverageLunchPriceTrue(restorantData.menu[0], restorantData.menu[1], restorantData.averageLunchPrice));
+console.log(isAverageLunchPriceTrue(restorantData.menu[3], restorantData.menu[1], restorantData.averageLunchPrice));
+//2 решена
 
+let a = {};
 function transferWaitors(data) {
-    const copy = Object.assign({}, data);
+    const copy = Object.assign(a, data);
 
-    copy.waitors[0] = {name: 'Mike', age: 32};
+    copy.waitors = [{name: 'Mike', age: 32}];
     return copy;
 }
 
 transferWaitors(restorantData);
+
+console.log(restorantData)
+console.log(a);
