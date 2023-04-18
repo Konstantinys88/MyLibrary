@@ -1,6 +1,6 @@
 "use strict";
 
-let id = Symbol('id');
+let id = Symbol.for('id');
 const obj = {
     name: 'Test',
     [id]: 1,
@@ -9,10 +9,13 @@ const obj = {
     }
 };
 
+console.log(obj[Symbol.for('id')]);
 
 console.log(obj[Object.getOwnPropertySymbols(obj)[0]]);
 obj[Object.getOwnPropertySymbols(obj)[0]] = 123;
 console.log(obj[Object.getOwnPropertySymbols(obj)[0]]);
+
+console.log(obj[Symbol.for('id')]);
 
 // let id = Symbol('id');
 // obj[id] = 1;

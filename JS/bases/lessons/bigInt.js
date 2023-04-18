@@ -1,0 +1,7 @@
+"use strict";
+
+const bigint = 1233423423431231312312321321333312331231n;
+
+// const sameBigint = BigInt(1233423423431231312312321321333312331231);
+
+console.log(5n / 2n);
